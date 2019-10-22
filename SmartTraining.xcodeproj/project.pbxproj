@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C71ECB27234651D100B536DE /* SchoodUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C71ECB26234651D100B536DE /* SchoodUtil.m */; };
+		C71ECB2A2346629000B536DE /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71ECB292346629000B536DE /* Beacon.swift */; };
 		C7D11F932344EFF200995672 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D11F922344EFF200995672 /* AppDelegate.swift */; };
 		C7D11F952344EFF200995672 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D11F942344EFF200995672 /* ViewController.swift */; };
 		C7D11F982344EFF200995672 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D11F962344EFF200995672 /* Main.storyboard */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C71ECB25234651D000B536DE /* SmartTraining-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartTraining-Bridging-Header.h"; sourceTree = "<group>"; };
+		C71ECB26234651D100B536DE /* SchoodUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoodUtil.m; sourceTree = "<group>"; };
+		C71ECB28234651DC00B536DE /* SchoodUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchoodUtil.h; sourceTree = "<group>"; };
+		C71ECB292346629000B536DE /* Beacon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
 		C7D11F8F2344EFF200995672 /* SmartTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D11F922344EFF200995672 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7D11F942344EFF200995672 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,11 +64,15 @@
 			children = (
 				C7D11F922344EFF200995672 /* AppDelegate.swift */,
 				C7D11F942344EFF200995672 /* ViewController.swift */,
+				C71ECB292346629000B536DE /* Beacon.swift */,
+				C71ECB28234651DC00B536DE /* SchoodUtil.h */,
+				C71ECB26234651D100B536DE /* SchoodUtil.m */,
 				C7D11F962344EFF200995672 /* Main.storyboard */,
 				C7D11F9C2344EFF300995672 /* Assets.xcassets */,
 				C7D11F9E2344EFF300995672 /* LaunchScreen.storyboard */,
 				C7D11FA12344EFF300995672 /* Info.plist */,
 				C7D11F992344EFF200995672 /* SmartTraining.xcdatamodeld */,
+				C71ECB25234651D000B536DE /* SmartTraining-Bridging-Header.h */,
 			);
 			path = SmartTraining;
 			sourceTree = "<group>";
@@ -99,6 +109,7 @@
 				TargetAttributes = {
 					C7D11F8E2344EFF200995672 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -139,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7D11F952344EFF200995672 /* ViewController.swift in Sources */,
+				C71ECB27234651D100B536DE /* SchoodUtil.m in Sources */,
+				C71ECB2A2346629000B536DE /* Beacon.swift in Sources */,
 				C7D11F932344EFF200995672 /* AppDelegate.swift in Sources */,
 				C7D11F9B2344EFF200995672 /* SmartTraining.xcdatamodeld in Sources */,
 			);
@@ -286,7 +299,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HLJRQ2DH2K;
 				INFOPLIST_FILE = SmartTraining/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -294,6 +309,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.ipdec.SmartTraining;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartTraining/SmartTraining-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,7 +320,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HLJRQ2DH2K;
 				INFOPLIST_FILE = SmartTraining/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.ipdec.SmartTraining;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartTraining/SmartTraining-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

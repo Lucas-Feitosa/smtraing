@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+
+class Beacon{
+    var distance: Int = 0
+    var rssi = [Int]()
+    var alias: String = ""
+    
+    
+}

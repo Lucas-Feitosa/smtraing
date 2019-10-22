@@ -8,6 +8,7 @@
 
 #ifndef LE_Transfer_SchoodUtil_h
 #define LE_Transfer_SchoodUtil_h
+#import <Foundation/Foundation.h>
 
 @interface SchoodUtil: NSObject
 + (NSString *)extractSchoolId:(NSData *)input;

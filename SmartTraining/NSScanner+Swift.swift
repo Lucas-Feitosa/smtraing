@@ -5,7 +5,7 @@
 
 import Foundation
 
-extension NSScanner {
+extension Scanner {
     
     // MARK: Strings
     
